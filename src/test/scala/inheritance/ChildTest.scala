@@ -17,4 +17,10 @@ class ChildTest extends Specification {
       Child().overriddenName must be_==("Child")
     }
   }
+
+  "The child's extra name that the parent does not have" should {
+    "be Extra" in {
+      Child().extraName must be_==("Extra")
+    }
+  }
 }
