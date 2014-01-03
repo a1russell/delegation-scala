@@ -11,4 +11,10 @@ class ChildTest extends Specification {
       Child().inheritedName must be_==("Same")
     }
   }
+
+  "The child's name that overrides its parent's" should {
+    "be Child" in {
+      Child().overriddenName must be_==("Child")
+    }
+  }
 }
