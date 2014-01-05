@@ -11,4 +11,10 @@ class ProxyTest extends Specification {
       Proxy().delegatedName must be_==("Same")
     }
   }
+
+  "The proxy's name that is implemented" should {
+    "be Proxy" in {
+      Proxy().implementedName must be_==("Proxy")
+    }
+  }
 }
