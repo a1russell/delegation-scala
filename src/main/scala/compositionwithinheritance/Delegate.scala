@@ -1,6 +1,6 @@
 package compositionwithinheritance
 
-class Delegate {
+class Delegate extends Interface {
   def delegatedName = "Same"
 }
 
