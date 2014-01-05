@@ -17,4 +17,10 @@ class ProxyTest extends Specification {
       Proxy().implementedName must be_==("Proxy")
     }
   }
+
+  "The proxy's extra name that the delegate does not have" should {
+    "be Extra" in {
+      Proxy().extraName must be_==("Extra")
+    }
+  }
 }

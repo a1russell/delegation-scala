@@ -9,6 +9,7 @@ package compositionwithinheritance
 class Proxy private(private val delegate: Delegate) extends Interface {
   def delegatedName: String = delegate.delegatedName
   def implementedName = "Proxy"
+  def extraName = "Extra"
 }
 
 object Proxy {
