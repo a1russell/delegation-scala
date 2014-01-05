@@ -11,4 +11,10 @@ class DelegateTest extends Specification {
       Delegate().delegatedName must be_==("Same")
     }
   }
+
+  "The delegate's name that will be different from the proxy" should {
+    "be Delegate" in {
+      Delegate().implementedName must be_==("Delegate")
+    }
+  }
 }
