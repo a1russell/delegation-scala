@@ -4,6 +4,7 @@ import scala.language.implicitConversions
 
 class Wrapper private(private val delegate: Delegate) {
   def implementedName = "Wrapper"
+  def extraName = "Extra"
 }
 
 object Wrapper {

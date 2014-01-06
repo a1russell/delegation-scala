@@ -17,4 +17,10 @@ class WrapperTest extends Specification {
       Wrapper().implementedName must be_==("Wrapper")
     }
   }
+
+  "The wrapper's extra name that the delegate does not have" should {
+    "be Extra" in {
+      Wrapper().extraName must be_==("Extra")
+    }
+  }
 }
