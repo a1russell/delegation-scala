@@ -11,4 +11,10 @@ class WrapperTest extends Specification {
       Wrapper().delegatedName must be_==("Same")
     }
   }
+
+  "The wrapper's name that is implemented" should {
+    "be Wrapper" in {
+      Wrapper().implementedName must be_==("Wrapper")
+    }
+  }
 }

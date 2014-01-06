@@ -3,6 +3,7 @@ package compositionwithoutinheritance
 import scala.language.implicitConversions
 
 class Wrapper private(private val delegate: Delegate) {
+  def implementedName = "Wrapper"
 }
 
 object Wrapper {
